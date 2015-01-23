@@ -3,8 +3,8 @@
  * The template for displaying all single posts and attachments
  *
  * @package WordPress
- * @subpackage Chris-SASS
- * @since Chris-SASS 1.0
+ * @subpackage Chris_SASS
+ * @since Chris_SASS 1.0
  */
 
 get_header(); ?>
@@ -30,11 +30,11 @@ get_header(); ?>
 
 			// Previous/next post navigation.
 			the_post_navigation( array(
-				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'Chris-SASS' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post:', 'Chris-SASS' ) . '</span> ' .
+				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'Chris_SASS' ) . '</span> ' .
+					'<span class="screen-reader-text">' . __( 'Next post:', 'Chris_SASS' ) . '</span> ' .
 					'<span class="post-title">%title</span>',
-				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'Chris-SASS' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Previous post:', 'Chris-SASS' ) . '</span> ' .
+				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'Chris_SASS' ) . '</span> ' .
+					'<span class="screen-reader-text">' . __( 'Previous post:', 'Chris_SASS' ) . '</span> ' .
 					'<span class="post-title">%title</span>',
 			) );
 

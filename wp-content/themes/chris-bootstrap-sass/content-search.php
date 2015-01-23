@@ -5,13 +5,13 @@
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  *
  * @package WordPress
- * @subpackage Chris-SASS
- * @since Chris-SASS 1.0
+ * @subpackage Chris_SASS
+ * @since Chris_SASS 1.0
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php Chris-SASS_post_thumbnail(); ?>
+	<?php Chris_SASS_post_thumbnail(); ?>
 
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
@@ -24,13 +24,13 @@
 	<?php if ( 'post' == get_post_type() ) : ?>
 
 		<footer class="entry-footer">
-			<?php Chris-SASS_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'Chris-SASS' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php Chris_SASS_entry_meta(); ?>
+			<?php edit_post_link( __( 'Edit', 'Chris_SASS' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-footer -->
 
 	<?php else : ?>
 
-		<?php edit_post_link( __( 'Edit', 'Chris-SASS' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
+		<?php edit_post_link( __( 'Edit', 'Chris_SASS' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
 
 	<?php endif; ?>
 

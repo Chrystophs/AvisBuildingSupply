@@ -3,8 +3,8 @@
  * The template for displaying search results pages.
  *
  * @package WordPress
- * @subpackage Chris-SASS
- * @since Chris-SASS1.0
+ * @subpackage Chris_SASS
+ * @since Chris_SASS1.0
  */
 
 get_header(); ?>
@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'Chris-SASS' ), get_search_query() ); ?></h1>
+				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'Chris_SASS' ), get_search_query() ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php
@@ -35,9 +35,9 @@ get_header(); ?>
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'Chris-SASS' ),
-				'next_text'          => __( 'Next page', 'Chris-SASS' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'Chris-SASS' ) . ' </span>',
+				'prev_text'          => __( 'Previous page', 'Chris_SASS' ),
+				'next_text'          => __( 'Next page', 'Chris_SASS' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'Chris_SASS' ) . ' </span>',
 			) );
 
 		// If no content, include the "No posts found" template.

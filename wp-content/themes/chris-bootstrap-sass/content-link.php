@@ -5,20 +5,20 @@
  * Used for both single and index/archive/search.
  *
  * @package WordPress
- * @subpackage Chris-SASS
- * @since Chris-SASS 1.0
+ * @subpackage Chris_SASS
+ * @since Chris_SASS 1.0
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php Chris-SASS_post_thumbnail(); ?>
+	<?php Chris_SASS_post_thumbnail(); ?>
 
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :
-				the_title( sprintf( '<h1 class="entry-title"><a href="%s">', esc_url( Chris-SASS_get_link_url() ) ), '</a></h1>' );
+				the_title( sprintf( '<h1 class="entry-title"><a href="%s">', esc_url( Chris_SASS_get_link_url() ) ), '</a></h1>' );
 			else :
-				the_title( sprintf( '<h2 class="entry-title"><a href="%s">', esc_url( Chris-SASS_get_link_url() ) ), '</a></h2>' );
+				the_title( sprintf( '<h2 class="entry-title"><a href="%s">', esc_url( Chris_SASS_get_link_url() ) ), '</a></h2>' );
 			endif;
 		?>
 	</header>
@@ -28,16 +28,16 @@
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
-				__( 'Continue reading %s', 'Chris-SASS' ),
+				__( 'Continue reading %s', 'Chris_SASS' ),
 				the_title( '<span class="screen-reader-text">', '</span>', false )
 			) );
 
 			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'Chris-SASS' ) . '</span>',
+				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'Chris_SASS' ) . '</span>',
 				'after'       => '</div>',
 				'link_before' => '<span>',
 				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'Chris-SASS' ) . ' </span>%',
+				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'Chris_SASS' ) . ' </span>%',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
@@ -52,8 +52,8 @@
 	?>
 
 	<footer class="entry-footer">
-		<?php Chris-SASS_entry_meta(); ?>
-		<?php edit_post_link( __( 'Edit', 'Chris-SASS' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php Chris_SASS_entry_meta(); ?>
+		<?php edit_post_link( __( 'Edit', 'Chris_SASS' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer>
 	<!-- .entry-footer -->
 

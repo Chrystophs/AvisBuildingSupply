@@ -5,8 +5,8 @@
  * Contains the closing of the "site-content" div and all content after.
  *
  * @package WordPress
- * @subpackage Chris-SASS
- * @since Chris-SASS 1.0
+ * @subpackage Chris_SASS
+ * @since Chris_SASS 1.0
  */
 ?>
 
@@ -16,13 +16,13 @@
 		<div class="site-info">
 			<?php
 				/**
-				 * Fires before the Chris-SASS footer text for footer customization.
+				 * Fires before the Chris_SASS footer text for footer customization.
 				 *
-				 * @since Chris-SASS 1.0
+				 * @since Chris_SASS 1.0
 				 */
-				do_action( 'Chris-SASS_credits' );
+				do_action( 'Chris_SASS_credits' );
 			?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'Chris-SASS' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'Chris-SASS' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'Chris_SASS' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'Chris_SASS' ), 'WordPress' ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 

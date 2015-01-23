@@ -3,8 +3,8 @@
  * The sidebar containing the main widget area
  *
  * @package WordPress
- * @subpackage Chris-SASS
- * @since Chris-SASS 1.0
+ * @subpackage Chris_SASS
+ * @since Chris_SASS 1.0
  */
 
 if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>

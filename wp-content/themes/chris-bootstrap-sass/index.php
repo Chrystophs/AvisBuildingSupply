@@ -10,8 +10,8 @@
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  *
  * @package WordPress
- * @subpackage Chris-SASS
- * @since Chris-SASS 1.0
+ * @subpackage Chris_SASS
+ * @since Chris_SASS 1.0
  */
 
 get_header(); ?>
@@ -43,9 +43,9 @@ get_header(); ?>
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'Chris-SASS' ),
-				'next_text'          => __( 'Next page', 'Chris-SASS' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'Chris-SASS' ) . ' </span>',
+				'prev_text'          => __( 'Previous page', 'Chris_SASS' ),
+				'next_text'          => __( 'Next page', 'Chris_SASS' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'Chris_SASS' ) . ' </span>',
 			) );
 
 		// If no content, include the "No posts found" template.

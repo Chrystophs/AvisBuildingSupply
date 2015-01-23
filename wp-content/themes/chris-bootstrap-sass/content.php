@@ -5,8 +5,8 @@
  * Used for both single and index/archive/search.
  *
  * @package WordPress
- * @subpackage Chris-SASS
- * @since Chris-SASS 1.0
+ * @subpackage Chris_SASS
+ * @since Chris_SASS 1.0
  */
 ?>
 
@@ -30,16 +30,16 @@
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
-				__( 'Continue reading %s', 'Chris-SASS' ),
+				__( 'Continue reading %s', 'Chris_SASS' ),
 				the_title( '<span class="screen-reader-text">', '</span>', false )
 			) );
 
 			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'Chris-SASS' ) . '</span>',
+				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'Chris_SASS' ) . '</span>',
 				'after'       => '</div>',
 				'link_before' => '<span>',
 				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'Chris-SASS' ) . ' </span>%',
+				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'Chris_SASS' ) . ' </span>%',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
@@ -53,8 +53,8 @@
 	?>
 
 	<footer class="entry-footer">
-		<?php Chris-SASS_entry_meta(); ?>
-		<?php edit_post_link( __( 'Edit', 'Chris-SASS' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php Chris_SASS_entry_meta(); ?>
+		<?php edit_post_link( __( 'Edit', 'Chris_SASS' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
