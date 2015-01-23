@@ -103,11 +103,13 @@ function Chris_SASS_setup() {
 		'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
 	) );
 
-	$color_scheme  = Chris_SASS_get_color_scheme();
-	$default_color = trim( $color_scheme[0], '#' );
+	/*
+	*$color_scheme  = Chris_SASS_get_color_scheme();
+	*$default_color = trim( $color_scheme[0], '#' );
+	*/
 
 	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'twentyfifteen_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'Chris_SASS_custom_background_args', array(
 		'default-color'      => $default_color,
 		'default-attachment' => 'fixed',
 	) ) );
@@ -119,7 +121,7 @@ function Chris_SASS_setup() {
 	add_editor_style( array( 'css/editor-style.css', 'genericons/genericons.css', Chris_SASS_fonts_url() ) );
 }
 endif; // Chris_SASS_setup
-add_action( 'after_setup_theme', 'twentyfifteen_setup' );
+add_action( 'after_setup_theme', 'Chris_SASS_setup' );
 
 /**
  * Register widget area.
@@ -128,7 +130,7 @@ add_action( 'after_setup_theme', 'twentyfifteen_setup' );
  *
  * @link https://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function twentyfifteen_widgets_init() {
+function Chris_SASS_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Widget Area', 'Chris_SASS' ),
 		'id'            => 'sidebar-1',
@@ -139,7 +141,7 @@ function twentyfifteen_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'twentyfifteen_widgets_init' );
+add_action( 'widgets_init', 'Chris_SASS_widgets_init' );
 
 if ( ! function_exists( 'Chris_SASS_fonts_url' ) ) :
 /**
@@ -198,7 +200,7 @@ endif;
  *
  * @since Chris_SASS 1.0
  */
-function twentyfifteen_scripts() {
+function Chris_SASS_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'Chris_SASS-fonts', Chris_SASS_fonts_url(), array(), null );
 
@@ -232,16 +234,16 @@ function twentyfifteen_scripts() {
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'Chris_SASS' ) . '</span>',
 	) );
 }
-add_action( 'wp_enqueue_scripts', 'twentyfifteen_scripts' );
+add_action( 'wp_enqueue_scripts', 'Chris_SASS_scripts' );
 
 /**
  * Add featured image as background image to post navigation elements.
  *
- * @since Twenty Fifteen 1.0
+ * @since Chris_SASS 1.0
  *
  * @see wp_add_inline_style()
  */
-function twentyfifteen_post_nav_background() {
+function Chris_SASS_post_nav_background() {
 	if ( ! is_single() ) {
 		return;
 	}
@@ -304,7 +306,7 @@ add_filter( 'walker_nav_menu_start_el', 'Chris_SASS_nav_description', 10, 4 );
  * @param string $html Search form HTML.
  * @return string Modified search form HTML.
  */
-function twentyfifteen_search_form_modify( $html ) {
+function Chris_SASS_search_form_modify( $html ) {
 	return str_replace( 'class="search-submit"', 'class="search-submit screen-reader-text"', $html );
 }
 add_filter( 'get_search_form', 'Chris_SASS_search_form_modify' );
@@ -314,18 +316,22 @@ add_filter( 'get_search_form', 'Chris_SASS_search_form_modify' );
  *
  * @since Chris_SASS 1.0
  */
+/*
 require get_template_directory() . '/inc/custom-header.php';
-
+*/
 /**
  * Custom template tags for this theme.
  *
  * @since Chris_SASS 1.0
  */
+/*
 require get_template_directory() . '/inc/template-tags.php';
-
+*/
 /**
  * Customizer additions.
  *
  * @since Chris_SASS 1.0
  */
+/*
 require get_template_directory() . '/inc/customizer.php';
+*/

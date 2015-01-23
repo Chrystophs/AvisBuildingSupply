@@ -11,10 +11,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
+	<!-- <?php
 		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
-	?>
+		Chris_SASS_post_thumbnail();
+	?> -->
 
 	<header class="entry-header">
 		<?php

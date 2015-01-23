@@ -6,7 +6,7 @@ Tested up to: 4.1
 Stable tag: 4.1
 
 == Description ==
-Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Our 2015 default theme is clean, blog-focused, and designed for clarity. Chris_SASS's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
 
 * Responsive Layout
 * Custom Colors
@@ -26,7 +26,7 @@ Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty 
 
 = How do I change the color scheme? =
 
-You can change the colors of your site easily using Twenty Fifteen.
+You can change the colors of your site easily using Chris_SASS.
 
 1. In your admin panel, go to Appearance -> Customize.
 4. Now you will see the Customizer and a tab called 'Colors'. Click this tab.
@@ -36,7 +36,7 @@ You can change the colors of your site easily using Twenty Fifteen.
 
 = How do I add the Social Links to the sidebar? =
 
-Twenty Fifteen allows you display links to your social media profiles, like Twitter and Facebook, with icons.
+Chris_SASS allows you display links to your social media profiles, like Twitter and Facebook, with icons.
 
 1. Create a new Custom Menu, and assign it to the Social Links Menu location.
 2. Add links to each of your social services using the Links panel.
@@ -74,7 +74,7 @@ Social networks that aren't currently supported will be indicated by a generic s
 
 = How do I add a description for my menu link in navigation? =
 
-Twenty Fifteen sports a menu design that's easy to navigate -- especially when you add menu descriptions.
+Chris_SASS sports a menu design that's easy to navigate -- especially when you add menu descriptions.
 
 1. Visit the Menus page in your admin.
 2. Use the Screen Options tab to "Show advanced menu properties".

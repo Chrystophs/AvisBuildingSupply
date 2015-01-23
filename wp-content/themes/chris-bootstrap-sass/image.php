@@ -34,7 +34,7 @@ get_header(); ?>
 						<div class="entry-attachment">
 							<?php
 								/**
-								 * Filter the default Twenty Fifteen image attachment size.
+								 * Filter the default Chris_SASS image attachment size.
 								 *
 								 * @since Chris_SASS 1.0
 								 *
