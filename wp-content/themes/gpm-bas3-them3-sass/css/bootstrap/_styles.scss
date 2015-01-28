@@ -118,7 +118,9 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 }
 
 .body-bg {
-  background-color: #ffffff;
+  background-color: #fff;
+  background-position: fixed;
+  background-repeat: no-repeat;
   padding-bottom: 20px;
   .container {
     background: #fff;
@@ -189,6 +191,11 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 }
 
 /* Header Styles */
+
+.h-bg {
+  background-color: #e7e7e7;
+  display: block;
+}
 
 .top-bar {
   background: $top-bar-color;
