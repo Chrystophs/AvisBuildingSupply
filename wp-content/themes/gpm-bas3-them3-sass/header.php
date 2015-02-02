@@ -110,6 +110,9 @@
                         );
                     ?>
             <div class="social-links">
+                <a href="https://bluetarp.com/login" alt="https://bluetarp.com/login" target="_blank">
+                    <img src="<?php bloginfo('template_url'); ?>/i/logo_masthead.png" alt="BlueTarp" class="bluetarp"/>
+                </a>
                 <?php get_template_part( 'partials/svg','declaration'); ?>
             </div>
                </div>
