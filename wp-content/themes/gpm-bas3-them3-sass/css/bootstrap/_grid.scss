@@ -21,6 +21,20 @@
   }
 }
 
+.containernav {
+  @include container-fixed();
+
+  @media (min-width: $screen-sm-min) {
+    width: $containernav-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $containernav-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $containernav-lg;
+  }
+}
+
 
 // Fluid container
 //

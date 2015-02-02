@@ -118,12 +118,15 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 }
 
 .body-bg {
-  background-color: #fff;
+  background-image: url(../i/bg.jpg);
   background-position: fixed;
   background-repeat: no-repeat;
   padding-bottom: 20px;
   .container {
     background: #fff;
+  }
+  .containernav {
+    background: #CC0000;
   }
 }
 
@@ -193,7 +196,11 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 /* Header Styles */
 
 .h-bg {
-  background-color: #e7e7e7;
+  background-image: url(../i/headbg.png);
+  background-color: #777;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 325px;
   display: block;
 }
 
@@ -254,22 +261,28 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
   span {
     font-size: 14px;
     line-height: 26px;
-    color: #8d8881;
+    color: #fff;
     font-family: "jaf-facitweb",sans-serif;
+    text-shadow: 2px 2px #222;
   }
 }
 
 .h-phone {
+  font-size: 18px;
   margin-top: 20px;
   text-align: right;
+  color: #fff;
+  text-shadow: 2px 2px #222;
   span {
     font-size: 16px;
     line-height: 18px;
-    color: #8d8881;
+    color: #fff;
     font-family: "jaf-facitweb",sans-serif;
+    text-shadow: 2px 2px #222;
     strong {
-      color: #8a7a67;
+      color: #fff;
       font-size: 18px;
+      text-shadow: 2px 2px #222;
     }
   }
 }

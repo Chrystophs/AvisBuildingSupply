@@ -37,8 +37,8 @@
 <?php if (of_get_option('remove_top_bar') != 1) : ?> 
 <?php endif; ?>
 <header role="banner">
-<div class="container">
-	<div class="row">
+<div class="container trans">
+	<div class="row h-bg">
             <div class="col-sm-6 col-md-6 col-lg-5">
                 <?php $logo_header = of_get_option('logo_header');
 				  if ($logo_header) { ?>
@@ -52,11 +52,8 @@
 				<?php } ?>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-7">
-            	<div class="social-links">
-					<?php get_template_part( 'partials/svg','declaration'); ?>
-                </div>
                 
-                <!-- <div class="h-phone">
+                <div class="h-phone">
                 	<?php
 						$phone_new = contact_detail('phone_new', '' , '', false);
                         $phone_current = contact_detail('phone_current', '' , '', false);
@@ -73,11 +70,11 @@
                 </div>
                 <div class="h-address">
                     <span><?php if (function_exists('contact_detail')) { contact_detail('address_short'); } ?></span>
-                </div>-->
+                </div>
             </div>
      </div>
 </div>
-<div class="container">
+<!-- <div class="container">
     <div class="top-bar">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -85,14 +82,14 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 </header>
 <?php if (of_get_option('make_nav_sticky') == 1) : ?> 
 <div data-spy="affix" data-offset-top="210" data-offset-bottom="200">
 <?php endif; ?>
-    <div class="navbar navbar-default">
-      <div class="container">
-          <nav role="navigation">
+<div class="navbar navbar-default">
+    <div class="containernav">
+          <nav class="navigation" role="navigation">
               <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -112,10 +109,13 @@
                         'fallback_cb'    => '__return_false')
                         );
                     ?>
+            <div class="social-links">
+                <?php get_template_part( 'partials/svg','declaration'); ?>
+            </div>
                </div>
           </nav>
-      </div>
     </div>
+</div>
 <?php if (of_get_option('make_nav_sticky') == 1) : ?> 
 </div>
 <?php endif; ?>
