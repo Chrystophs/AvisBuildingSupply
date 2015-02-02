@@ -9,6 +9,7 @@
 // other navbar variations.
 
 .navbar {
+  box-shadow: 2px 5px 15px #444;
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
@@ -97,7 +98,7 @@
 .container-fluid {
   > .navbar-header,
   > .navbar-collapse {
-    background-color: $navbar-default-bg;
+    background: linear-gradient(#EE0000,#880000) !important;
     margin-right: -$navbar-padding-horizontal;
     margin-left:  -$navbar-padding-horizontal;
 
@@ -183,7 +184,7 @@
   margin-right: $navbar-padding-horizontal;
   padding: 9px 10px;
   @include navbar-vertical-align(34px);
-  background-color: $navbar-default-bg;
+  background: linear-gradient(#EE0000,#880000) !important;
   //background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   border-radius: $border-radius-base;
@@ -236,7 +237,7 @@
       float: none;
       width: auto;
       margin-top: 0;
-      background-color: $navbar-default-bg;
+      background: linear-gradient(#EE0000,#880000) !important;
       border: 0;
       box-shadow: none;
       > li > a,
@@ -386,7 +387,7 @@
 
 // Default navbar
 .navbar-default {
-  background-color: $navbar-default-bg;
+  background: linear-gradient(#EE0000,#880000);
   border-color: $navbar-default-border;
 
   .navbar-brand {
