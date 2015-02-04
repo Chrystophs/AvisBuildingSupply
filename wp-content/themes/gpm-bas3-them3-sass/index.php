@@ -5,7 +5,7 @@
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4">
             	<div class="content-block">
                   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>	
-                      <div class="row">
+                       <div class="row">
                           <div class="col-xs-12">
                               <?php if (is_single()) { ?>
                                   <h1 class="single-title"><?php the_title(); ?></h1>

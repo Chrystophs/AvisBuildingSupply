@@ -45,7 +45,7 @@ get_header();
                         	<?php if ( has_post_thumbnail() ) { ?>
 								  <?php the_post_thumbnail(array(400,400), array('class'=>'img-thumbnail pull-left margin-right')); ?>
                             <?php } ?>
-                        	<header class="article-header">
+                        	<header class="article-header team-font">
                             	<h1 class="page-title" itemprop="headline">
 								  <?php
                                     if(get_field('custom_page_headline_(h1)')) {

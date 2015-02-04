@@ -15,7 +15,7 @@ get_header(); ?>
           		<div class="content-block">
                   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>	
                   <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/WebPage">
-                        	<header class="article-header">
+                        	<header class="article-header team-font">
                             	<h1 class="page-title" itemprop="headline">
 								  <?php
                                     if(get_field('custom_page_headline_(h1)')) {
@@ -49,7 +49,7 @@ get_header(); ?>
                           	</section>
                   			<hr/>
 							<?php 
-                                $args = array( 'post_type' => 'team', 'order' => 'ASC' );
+                                $args = array(  'post_type' => 'team', 'orderby' => 'menu_order',  'order' => 'ASC', 'posts_per_page' => -1 );
                                 $loop = new WP_Query( $args );
                             ?>
                             <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>

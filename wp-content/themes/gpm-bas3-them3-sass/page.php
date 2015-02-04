@@ -13,7 +13,7 @@
                     <div class="content-block">
                     	<article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/WebPage">
                         	<header class="article-header">
-                            	<h1 class="page-title" itemprop="headline">
+                            	<h1 class="page-title team-font" itemprop="headline">
 								  <?php
                                     if(get_field('custom_page_headline_(h1)')) {
                                           the_field('custom_page_headline_(h1)');
