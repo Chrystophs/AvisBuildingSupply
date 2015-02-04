@@ -119,9 +119,10 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 
 .body-bg {
   background-image: url(../i/bg.jpg);
-  background-position: fixed;
-  background-repeat: no-repeat;
+  background-position: top center;
+  background-repeat: repeat-y;
   padding-bottom: 20px;
+
   .container {
     background: #fff;
   }
@@ -204,7 +205,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 .h-bg {
   background-image: url(../i/headbg.png);
   background-color: #777;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center;
   height: 325px;
   display: block;
@@ -301,8 +302,14 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
   padding: 50px 0px 50px 0px;
 }
 .footer-copyright {
-  background: $copyright-bar-color;
+  background: $copyright-bar-color ;
   padding: 10px 0px 10px 0px;
+}
+.footer-bg {
+  background: $copyright-bar-color !important;
+}
+.f-bar-bg {
+  background: $footer-bar-color !important;
 }
 .f-map{
   img {
@@ -445,6 +452,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 .maps-box {
   width: 100%;
   overflow: hidden;
+  box-shadow: 1px 0 10px #222;
   img {
     position: relative;
     left: 50%;
@@ -453,7 +461,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 }
 
 .maps-box-narrow {
-  margin-top: 20px;
   width: 100%;
   overflow: hidden;
   border: 1px solid #000;

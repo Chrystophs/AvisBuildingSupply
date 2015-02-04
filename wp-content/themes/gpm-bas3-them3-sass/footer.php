@@ -1,4 +1,6 @@
-<?php if (of_get_option('disable_footer_callouts') != 1) : ?> 
+<!--Testimonials -->
+
+<!--<?php if (of_get_option('disable_footer_callouts') != 1) : ?> 
 <div class="testimonial-bar visible-lg">
     <div class="container">
       <div class="row">
@@ -43,10 +45,10 @@
       </div>
     </div>
 </div>
-<?php endif; ?>
+<?php endif; ?>-->
 <footer>
     <div class="footer-bar">
-        <div class="container">   
+        <div class="container f-bar-bg">   
             <div class="row">
             	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-5">
                         <?php 
@@ -106,6 +108,16 @@
                     
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <?php $logo_header = of_get_option('logo_header');
+                    if ($logo_header) { ?>
+                    <a class="main-logo" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
+                            <img src="<?php echo $logo_header; ?>" alt="<?php bloginfo('name'); ?>" class="img-responsive"/>
+                    </a>
+                    <?php } else { ?>
+                        <a class="main-logo" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
+                            <img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt="<?php bloginfo('name'); ?>" class="img-responsive"/>
+                        </a>
+                    <?php } ?>
                     <div class="footer-links">
                     <?php 
                         wp_nav_menu( array(
@@ -122,7 +134,7 @@
         </div>
     </div>
     <div class="footer-copyright">
-        <div class="container"> 
+        <div class="container footer-bg"> 
             <div class="row">
                 <div class="col-xs-12">
                     <p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - Designed &amp; Developed by <a href="http://www.goldenproportions.com" target="_blank">Golden Proportions Marketing</a> - <?php wp_loginout(); ?></p>
