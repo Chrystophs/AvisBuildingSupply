@@ -11,6 +11,10 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 //## Gray and brand colors for use across Bootstrap.
 
+$red:                    #B30000 !default;
+$red-dark:				 darken($red, 5%)!default;
+$red-darker:             darken($red, 15%)!default;
+
 $gray-darker:            lighten(#000, 13.5%) !default; // #222
 $gray-dark:              lighten(#000, 20%) !default;   // #333
 $gray:                   lighten(#000, 33.5%) !default; // #555
@@ -24,7 +28,7 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
 $top-bar-color: #534741 !default;
-$footer-bar-color: #534741 !default;
+$footer-bar-color: #fff !default;
 $copyright-bar-color: #362f2d !default;
 
 $owl-main-color: #ff5335 !default;
@@ -60,7 +64,7 @@ $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-h1:            floor(($font-size-base * 4.6)) !default; // ~36px
+$font-size-h1:            floor(($font-size-base * 3.6)) !default; // ~36px
 $font-size-h2:            floor(($font-size-base * 1.85)) !default; // ~30px
 $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
 $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
@@ -78,8 +82,8 @@ $headings-font-weight:    500 !default;
 $headings-line-height:    1.0 !default;
 $headings-color:          inherit !default;
 
-$footer-menu-link-color: #fef4e6 !default;
-$footer-menu-link-hover-color: #000 !default;
+$footer-menu-link-color: #000 !default;
+$footer-menu-link-hover-color: #444 !default;
 
 //** Blog Styles
 

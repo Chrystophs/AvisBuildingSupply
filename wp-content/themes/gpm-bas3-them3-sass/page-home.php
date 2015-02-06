@@ -6,7 +6,7 @@ get_header();
 
 ?>
 <div class="body-bg">
-	<?php
+	 <?php
         $posts_per_page = 4;
         $args = array( 'post_type' => 'homepage-slider', 'order' => 'ASC', 'posts_per_page' => $posts_per_page );
         $loop = new WP_Query( $args ); 
@@ -47,7 +47,7 @@ get_header();
                             <?php } ?>
                         	<header class="article-header team-font">
                             	<h1 class="page-title" itemprop="headline">
-								  <?php
+                                  <?php
                                     if(get_field('custom_page_headline_(h1)')) {
                                           the_field('custom_page_headline_(h1)');
                                     } else {

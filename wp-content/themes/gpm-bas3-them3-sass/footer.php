@@ -47,6 +47,8 @@
 </div>
 <?php endif; ?>-->
 <footer>
+<div class="navbar navbar-default">
+</div>
     <div class="footer-bar">
         <div class="container f-bar-bg">   
             <div class="row">
