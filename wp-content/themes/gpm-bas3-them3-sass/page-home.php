@@ -76,6 +76,17 @@ get_header();
                   <?php wp_reset_query(); ?>
               </div>
           </div>
+            <div class="row">
+              <div id="owl-demo" class="owl-carousel owl-theme">
+   
+                <div class="item"><img src="<?php bloginfo('template_url'); ?>/i/lumberyard.jpg" alt="Lumber Yard"></div>
+                <div class="item"><img src="<?php bloginfo('template_url'); ?>/i/storefront.jpg" alt="storefront"></div>
+                <div class="item"><img src="<?php bloginfo('template_url'); ?>/i/ckpaint.jpg" alt="Mirror Edge"></div>
+                <div class="item scroll-post center"><p>Rock Salt 50# <span>$6.99</span><br/> Safestep Mix 50# <span>$13.99</span><br/>Ace Ice Melter <span>$15.99</span></p></div>
+               
+              </div>
+            </div>
+
           <?php $home_blog_feed = of_get_option('home_blog_feed'); ?>
           <?php if ($home_blog_feed == 1) : ?>
           <div class="row">
