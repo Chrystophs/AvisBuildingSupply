@@ -77,7 +77,7 @@ get_header(); ?>
                             </section>
                             <?php endwhile; ?>
                             <?php wp_reset_query(); ?>
-                     </article>  
+                     </article> 
                </div>          			
           </div>
         </div>
