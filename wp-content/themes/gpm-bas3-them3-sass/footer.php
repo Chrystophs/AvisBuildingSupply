@@ -130,6 +130,7 @@
                         'fallback_cb'    => '__return_false')
                         );
                     ?>
+                     <span class="hours-short"><span class="glyphicon glyphicon-time"></span> <?php if (function_exists('contact_detail')) { contact_detail('hours_short'); } ?></span>
                     </div>
                 </div>
             </div>

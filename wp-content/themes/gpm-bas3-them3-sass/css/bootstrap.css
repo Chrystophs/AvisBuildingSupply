@@ -5854,15 +5854,15 @@ button.close {
 
 /* line 241, bootstrap/_styles.scss */
 .hours-short {
-  font-size: 11px;
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+  font-size: 16px;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
   /* line 245, bootstrap/_styles.scss */
   .hours-short a {
     color: #e2e2e2; }
     /* line 247, bootstrap/_styles.scss */
     .hours-short a:hover {
-      color: #fff; }
+      color: #333; }
 
 /* line 253, bootstrap/_styles.scss */
 .social-links {
@@ -5967,137 +5967,138 @@ button.close {
 
 /* line 357, bootstrap/_styles.scss */
 .footer-links {
+  margin-top: 30px;
   min-height: 160px; }
-  /* line 360, bootstrap/_styles.scss */
+  /* line 361, bootstrap/_styles.scss */
   .footer-links li ul {
     list-style-type: none; }
 
-/* line 366, bootstrap/_styles.scss */
+/* line 367, bootstrap/_styles.scss */
 .footer-menu {
   list-style-type: none;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px; }
-  /* line 370, bootstrap/_styles.scss */
+  /* line 371, bootstrap/_styles.scss */
   .footer-menu a {
     color: #000; }
-    /* line 372, bootstrap/_styles.scss */
+    /* line 373, bootstrap/_styles.scss */
     .footer-menu a:hover {
       color: #444; }
 
 /* Callouts */
-/* line 380, bootstrap/_styles.scss */
+/* line 381, bootstrap/_styles.scss */
 .callout-title {
   text-align: center;
   font-size: 24px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 1px 1px 0px white; }
-  /* line 385, bootstrap/_styles.scss */
+  /* line 386, bootstrap/_styles.scss */
   .callout-title a {
     color: #333333; }
-    /* line 387, bootstrap/_styles.scss */
+    /* line 388, bootstrap/_styles.scss */
     .callout-title a:hover {
       text-decoration: none; }
 
-/* line 393, bootstrap/_styles.scss */
+/* line 394, bootstrap/_styles.scss */
 .callout-body {
   text-align: center;
   font-size: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* Services Pages */
-/* line 401, bootstrap/_styles.scss */
+/* line 402, bootstrap/_styles.scss */
 .services-tabs {
   margin-top: 30px; }
 
 /* Bootstrap Dropdown Fix */
-/* line 406, bootstrap/_styles.scss */
+/* line 407, bootstrap/_styles.scss */
 ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block; }
 
-/* line 409, bootstrap/_styles.scss */
+/* line 410, bootstrap/_styles.scss */
 .navbar .dropdown-menu {
   margin-top: 0px; }
 
 /* Team PAge */
-/* line 416, bootstrap/_styles.scss */
+/* line 417, bootstrap/_styles.scss */
 .team-font {
   text-shadow: 2px 1px 5px #555; }
 
-/* line 420, bootstrap/_styles.scss */
+/* line 421, bootstrap/_styles.scss */
 .team-row {
   margin-bottom: 20px; }
 
-/* line 424, bootstrap/_styles.scss */
+/* line 425, bootstrap/_styles.scss */
 .team-box {
   border: 1px solid #8D8881; }
 
-/* line 428, bootstrap/_styles.scss */
+/* line 429, bootstrap/_styles.scss */
 .team-name {
   position: absolute;
   bottom: 0px;
   left: 30px; }
 
-/* line 434, bootstrap/_styles.scss */
+/* line 435, bootstrap/_styles.scss */
 .modal-thumb {
   float: left;
   margin-right: 20px; }
 
-/* line 439, bootstrap/_styles.scss */
+/* line 440, bootstrap/_styles.scss */
 .bx-wrapper .bx-pager {
   position: absolute;
   top: -10px !important;
   right: 10px !important;
   width: auto !important; }
 
-/* line 446, bootstrap/_styles.scss */
+/* line 447, bootstrap/_styles.scss */
 #bx-pager {
   width: 100%;
   text-align: center;
   margin-bottom: 5px;
   background: #f9f9f9;
   padding: 10px 0px 10px 0px; }
-  /* line 453, bootstrap/_styles.scss */
+  /* line 454, bootstrap/_styles.scss */
   #bx-pager a img {
     border: 1px solid #8D8881;
     margin-left: 5px; }
-  /* line 458, bootstrap/_styles.scss */
+  /* line 459, bootstrap/_styles.scss */
   #bx-pager a .active img {
     border: 1px solid #428BCA; }
 
-/* line 465, bootstrap/_styles.scss */
+/* line 466, bootstrap/_styles.scss */
 .item img {
   border: 1px solid #8D8881 !important; }
 
-/* line 469, bootstrap/_styles.scss */
+/* line 470, bootstrap/_styles.scss */
 .pager-instructions {
   font-size: 12px;
   color: #8D8881;
   text-align: center; }
 
-/* line 476, bootstrap/_styles.scss */
+/* line 477, bootstrap/_styles.scss */
 .maps-box {
   width: 100%;
   overflow: hidden;
   box-shadow: 1px 0 10px #222; }
-  /* line 480, bootstrap/_styles.scss */
+  /* line 481, bootstrap/_styles.scss */
   .maps-box img {
     position: relative;
     left: 50%;
     margin-left: -960px; }
 
-/* line 487, bootstrap/_styles.scss */
+/* line 488, bootstrap/_styles.scss */
 .maps-box-narrow {
   width: 100%;
   overflow: hidden;
   border: 1px solid #000; }
-  /* line 491, bootstrap/_styles.scss */
+  /* line 492, bootstrap/_styles.scss */
   .maps-box-narrow img {
     position: relative;
     left: 50%;
     margin-left: -960px; }
 
 /* Testimonial 2 Page */
-/* line 500, bootstrap/_styles.scss */
+/* line 501, bootstrap/_styles.scss */
 .speech-bubble {
   background: #d8e7f0;
   border-bottom-right-radius: 10px;
@@ -6108,7 +6109,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   margin-bottom: 30px;
   position: relative; }
 
-/* line 509, bootstrap/_styles.scss */
+/* line 510, bootstrap/_styles.scss */
 .speech-bubble-triangle {
   width: 1px;
   height: 1px;
@@ -6120,7 +6121,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   bottom: -20px;
   right: 20px; }
 
-/* line 522, bootstrap/_styles.scss */
+/* line 523, bootstrap/_styles.scss */
 .affix {
   top: 0px;
   width: 100%;
@@ -6130,11 +6131,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 992px) {
-  /* line 535, bootstrap/_styles.scss */
+  /* line 536, bootstrap/_styles.scss */
   .navbar .caret {
     display: none; }
 
-  /* line 541, bootstrap/_styles.scss */
+  /* line 542, bootstrap/_styles.scss */
   .navbar .dropdown-menu {
     display: inline-block;
     position: relative;
@@ -6143,11 +6144,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     background: transparent;
     border: none;
     margin-left: 30px; }
-    /* line 551, bootstrap/_styles.scss */
+    /* line 552, bootstrap/_styles.scss */
     .navbar .dropdown-menu li a:before {
       content: '-'; }
 
-  /* line 559, bootstrap/_styles.scss */
+  /* line 560, bootstrap/_styles.scss */
   .affix {
     position: relative !important; } }
 /* Medium devices (desktops, 992px and up) */
