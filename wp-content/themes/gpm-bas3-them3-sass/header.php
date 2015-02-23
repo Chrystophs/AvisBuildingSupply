@@ -110,7 +110,15 @@
                         );
                     ?>
             <div class="social-links">
-                <a href="https://bluetarp.com/login" alt="https://bluetarp.com/login" target="_blank">
+            <?php if ( is_user_logged_in() ) { ?>
+            <a href="<?php echo wp_logout_url('template_url'); ?>"><span class="glyphicon glyphicon-log-out white"> Logout</span></a>
+                         
+        <?php } else { ?>
+
+            <a href="http://localhost/avisbuildingsupply/wp-login.php"><span class="glyphicon glyphicon-log-in white"> Login</span></a>
+            <a href="http://localhost/avisbuildingsupply/wp-login.php?action=register"><span class="glyphicon glyphicon-new-window white"> Register</span></a>
+        <?php } ?>
+            <a href="https://bluetarp.com/login" alt="https://bluetarp.com/login" target="_blank">
                     <img src="<?php bloginfo('template_url'); ?>/i/logo_masthead.png" alt="BlueTarp" class="bluetarp"/>
                 </a>
                 <?php get_template_part( 'partials/svg','declaration'); ?>
