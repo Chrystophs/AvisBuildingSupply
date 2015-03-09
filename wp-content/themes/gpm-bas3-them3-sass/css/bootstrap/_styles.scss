@@ -12,6 +12,18 @@
 
 /* Blog */
 
+.main-post {
+  font-family: 'Bree Serif';
+  color: #D10000;
+  font-size: 40px !important;
+}
+
+.main-content{
+  padding-top: 10px;
+  font-size: 18px !important;
+  font-family: 'Source Sans Pro', sans-serif !important
+}
+
 .alignleft, .alignright {
 padding: 5px;
 background: #fff;
@@ -64,7 +76,8 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 }
 
 .upper-meta {
-  margin-bottom: 15px;
+  font-size: 12px;
+  margin-bottom: -5px;
 }
 
 .single-title {
@@ -109,6 +122,23 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 }
 
 /* Page Styles */
+
+.post-title {
+  list-style: none;
+  a {
+    color: #D10000;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+  }
+}
+
+.post-content {
+  p {
+    font-size: 18px !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+  }
+}
 
 .todays-special {
   border: 2px solid #000;
@@ -416,7 +446,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 }
 
 
-/* Team PAge */
+/* Team Page */
 
 .team-font {
   text-shadow: 2px 1px 5px #555;

@@ -12,7 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title><?php wp_title(''); ?></title>
-    
+
+    <!-- Fotns -->
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
+
     <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 
     <?php wp_head(); ?>
@@ -110,14 +114,6 @@
                         );
                     ?>
             <div class="social-links">
-            <?php if ( is_user_logged_in() ) { ?>
-            <a href="<?php echo wp_logout_url('template_url'); ?>"><span class="glyphicon glyphicon-log-out white"> Logout</span></a>
-                         
-        <?php } else { ?>
-
-            <a href="http://localhost/avisbuildingsupply/wp-login.php"><span class="glyphicon glyphicon-log-in white"> Login</span></a>
-            <a href="http://localhost/avisbuildingsupply/wp-login.php?action=register"><span class="glyphicon glyphicon-new-window white"> Register</span></a>
-        <?php } ?>
             <a href="https://bluetarp.com/login" alt="https://bluetarp.com/login" target="_blank">
                     <img src="<?php bloginfo('template_url'); ?>/i/logo_masthead.png" alt="BlueTarp" class="bluetarp"/>
                 </a>

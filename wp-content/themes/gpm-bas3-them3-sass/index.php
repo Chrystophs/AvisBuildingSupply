@@ -2,18 +2,18 @@
 <div class="body-bg">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
             	<div class="content-block">
                   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>	
                        <div class="row">
                           <div class="col-xs-12">
                               <?php if (is_single()) { ?>
-                                  <h1 class="single-title"><?php the_title(); ?></h1>
+                                  <h1 class="single-title main-post"><?php the_title(); ?></h1>
                               <?php } else { ?>
                                   <span class="blog-title"><a href="<?php the_permalink(); ?>" rel="Bookmark" title="Permalink this article"><?php the_title(); ?></a></span>
                               <?php } ?>
                           
-                              <div class="upper-meta">added on: <em><?php echo get_the_date(); ?></em></div>
+                              <div class="upper-meta"><em><?php echo get_the_date(); ?></em></div>
                               
                               <?php if ( is_home() ) : ?> 
                                   <?php if ( has_post_thumbnail() ) { ?>
@@ -41,10 +41,9 @@
                                       </div><!-- /page-thumbnail -->
                                   <?php } ?>
                                   
-                                  <div><?php the_content(); ?></div>
+                                  <div class="main-content"><?php the_content(); ?></div>
                               <?php endif; ?>
                               <div class="clearfix"></div>
-                              <div class="lower-meta">Posted In: <?php the_category(', '); ?></div>
                           </div>
                       </div>
                       <div class="row">
@@ -80,9 +79,9 @@
                   <?php } ?>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8">
+            <!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8">
                 <?php get_sidebar('sidebar')?>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>	

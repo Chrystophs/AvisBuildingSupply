@@ -30,19 +30,19 @@ get_header();
                                 </h1>
                             </header>
                             <section itemprop="articleBody">
-                <?php
-                                  if(get_field('page_sub-headline_(h2)')) {
-                                    echo '<h2>';
-                                        the_field('page_sub-headline_(h2)');
-                                    echo '</h2>';
-                                  }
-                                ?>
-                                
+
+                                  <ul class="post-content">
+                                    <?php $the_query = new WP_Query( 'category_name=NewsAdvice&showposts=5' ); ?>
+                                      <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+                                      <li class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+                                      <div class="upper-meta"><em><?php echo get_the_date(); ?></em></div>
+                                      <p><?php the_content(__('(more…)')); ?></p>
+                                      <hr>
+                                    <?php endwhile;?>
+                                  </ul>
                                 <?php if ( has_post_thumbnail() ) { ?>
                                       <?php the_post_thumbnail(array(200,200), array('class'=>'img-thumbnail pull-right margin-left')); ?>
                                 <?php } ?>
-                                
-                                <?php the_content(); ?>
                             </section>
                         </article>
                     </div>      

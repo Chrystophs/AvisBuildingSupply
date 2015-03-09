@@ -405,6 +405,10 @@
 
   .navbar-nav {
     > li > a {
+      border-radius: 20px;
+      height: 40px;
+      padding-top: 10px;
+      margin-top: 5px;
       color: $navbar-default-link-color;
       font-weight: $navbar-default-font-weight;
       font-size: $navbar-default-font-size;

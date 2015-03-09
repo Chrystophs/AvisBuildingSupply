@@ -83,6 +83,7 @@ get_header();
                   <?php endif; ?>
                   <?php wp_reset_query(); ?>
               </div>
+
           </div>
           <?php $home_blog_feed = of_get_option('home_blog_feed'); ?>
           <?php if ($home_blog_feed == 1) : ?>
@@ -108,6 +109,7 @@ get_header();
                       	</div>
                   </div>
               </article>
+
               <?php endwhile; ?>
               <?php wp_reset_query(); ?>
           </div>
