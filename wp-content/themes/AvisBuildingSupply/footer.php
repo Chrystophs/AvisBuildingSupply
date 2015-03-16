@@ -140,7 +140,7 @@
         <div class="container footer-bg"> 
             <div class="row">
                 <div class="col-xs-12">
-                    <p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - Designed &amp; Developed by <a href="http://www.goldenproportions.com" target="_blank">Golden Proportions Marketing</a> - <?php wp_loginout(); ?></p>
+                    <p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - Designed &amp; Developed by Christopher Schultz - <?php wp_loginout(); ?></p>
                 </div>
             </div>
         </div>
