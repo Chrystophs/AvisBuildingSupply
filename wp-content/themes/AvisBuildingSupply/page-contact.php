@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <div class="maps-box">
-		<a href="<?php if (function_exists('contact_detail')) { contact_detail('google_maps'); } ?>" target="_blank"  itemprop=”maps”><img src="<?php bloginfo('template_url'); ?>/i/map.jpg" alt="google-maps" class=""/></a>
+		<a href="<?php if (function_exists('contact_detail')) { contact_detail('google_maps'); } ?>" target="_blank"  itemprop=”maps”><img src="<?php bloginfo('template_url'); ?>/i/map.png" alt="google-maps" class=""/></a>
 </div>
 <div class="body-bg">
     <div class="container" id="b-container">
