@@ -123,6 +123,10 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 
 /* Page Styles */
 
+.clear {
+  clear: both;
+}
+
 .post-title {
   list-style: none;
   a {
@@ -247,10 +251,19 @@ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 /* Header Styles */
 
 .supreme {
-  color: #002BE8;
+  position: relative;
+  bottom: 6px;
+  color: #353535;
   text-decoration: none;
-  padding-bottom: 10px;
   padding-right: 10px;
+  font-weight: bolder;
+  font-size: 16px;
+  a:hover {
+    text-decoration:none;
+  }
+  a:focus {
+    text-decoration: none;
+  }
 }
 
 .white {

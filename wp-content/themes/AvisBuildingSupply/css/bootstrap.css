@@ -5745,21 +5745,25 @@ button.close {
 
 /* Page Styles */
 /* line 126, bootstrap/_styles.scss */
+.clear {
+  clear: both; }
+
+/* line 130, bootstrap/_styles.scss */
 .post-title {
   list-style: none; }
-  /* line 128, bootstrap/_styles.scss */
+  /* line 132, bootstrap/_styles.scss */
   .post-title a {
     color: #D10000;
     text-decoration: none;
     font-size: 30px;
     font-family: 'Bree Serif', serif; }
 
-/* line 137, bootstrap/_styles.scss */
+/* line 141, bootstrap/_styles.scss */
 .post-content p {
   font-size: 18px !important;
   font-family: 'Source Sans Pro', sans-serif !important; }
 
-/* line 143, bootstrap/_styles.scss */
+/* line 147, bootstrap/_styles.scss */
 .todays-special {
   border: 2px solid #000;
   border-radius: 2px;
@@ -5768,88 +5772,88 @@ button.close {
   width: 500px;
   height: 155px; }
 
-/* line 152, bootstrap/_styles.scss */
+/* line 156, bootstrap/_styles.scss */
 #breadcrumbs {
   color: #8D8881;
   margin: 10px 0px 10px 0px; }
 
-/* line 157, bootstrap/_styles.scss */
+/* line 161, bootstrap/_styles.scss */
 .page-thumbnail {
   float: left;
   margin-right: 20px; }
 
-/* line 162, bootstrap/_styles.scss */
+/* line 166, bootstrap/_styles.scss */
 .content-block {
   margin-bottom: 50px;
   padding-top: 20px; }
-  /* line 165, bootstrap/_styles.scss */
+  /* line 169, bootstrap/_styles.scss */
   .content-block h1 {
     margin-top: 0px; }
 
-/* line 170, bootstrap/_styles.scss */
+/* line 174, bootstrap/_styles.scss */
 .body-bg {
   background-image: url(../i/bg.jpg);
   background-position: top center;
   background-repeat: repeat-y;
   padding-bottom: 20px; }
-  /* line 176, bootstrap/_styles.scss */
+  /* line 180, bootstrap/_styles.scss */
   .body-bg .container {
     background: #fff; }
-  /* line 179, bootstrap/_styles.scss */
+  /* line 183, bootstrap/_styles.scss */
   .body-bg .containernav {
     background: linear-gradient(#EE0000, #880000); }
 
-/* line 184, bootstrap/_styles.scss */
+/* line 188, bootstrap/_styles.scss */
 .upper-meta-side {
   color: #888888;
   margin-bottom: 20px; }
 
-/* line 189, bootstrap/_styles.scss */
+/* line 193, bootstrap/_styles.scss */
 .blog-roll-title {
   font-size: 24px; }
 
 /* Contact Page */
-/* line 195, bootstrap/_styles.scss */
+/* line 199, bootstrap/_styles.scss */
 .contact-headline {
   margin: 20px 0px 20px 0px;
   text-align: right; }
 
-/* line 200, bootstrap/_styles.scss */
+/* line 204, bootstrap/_styles.scss */
 .contact-name {
   font-size: 22px;
   line-height: 22px;
   margin: 10px 0px 0px 0px; }
 
-/* line 206, bootstrap/_styles.scss */
+/* line 210, bootstrap/_styles.scss */
 .contact-subname {
   font-size: 18px;
   line-height: 18px;
   margin: 5px 0px 10px 0px; }
 
-/* line 212, bootstrap/_styles.scss */
+/* line 216, bootstrap/_styles.scss */
 .contact-hours {
   font-size: 18px;
   line-height: 18px;
   margin: 5px 0px 10px 0px; }
 
 /*Testimonials Page Styles */
-/* line 219, bootstrap/_styles.scss */
+/* line 223, bootstrap/_styles.scss */
 .testimonial-row {
   margin-top: 10px; }
 
-/* line 223, bootstrap/_styles.scss */
+/* line 227, bootstrap/_styles.scss */
 .testimonial-bar {
   padding: 20px 0px 10px 0px;
   background: #e2e2e2; }
 
-/* line 228, bootstrap/_styles.scss */
+/* line 232, bootstrap/_styles.scss */
 .testimonial-text {
   position: absolute;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0px;
   opacity: 0.0; }
-  /* line 234, bootstrap/_styles.scss */
+  /* line 238, bootstrap/_styles.scss */
   .testimonial-text:hover {
     position: absolute;
     top: 0px;
@@ -5865,24 +5869,33 @@ button.close {
     transition: opacity .5s; }
 
 /* Header Styles */
-/* line 249, bootstrap/_styles.scss */
+/* line 253, bootstrap/_styles.scss */
 .supreme {
-  color: #002BE8;
+  position: relative;
+  bottom: 6px;
+  color: #353535;
   text-decoration: none;
-  padding-bottom: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  font-weight: bolder;
+  font-size: 16px; }
+  /* line 261, bootstrap/_styles.scss */
+  .supreme a:hover {
+    text-decoration: none; }
+  /* line 264, bootstrap/_styles.scss */
+  .supreme a:focus {
+    text-decoration: none; }
 
-/* line 256, bootstrap/_styles.scss */
+/* line 269, bootstrap/_styles.scss */
 .white {
   color: #ffffff; }
 
-/* line 260, bootstrap/_styles.scss */
+/* line 273, bootstrap/_styles.scss */
 .bluetarp {
   width: 90px;
   padding-bottom: 15px;
   margin-right: 15px; }
 
-/* line 266, bootstrap/_styles.scss */
+/* line 279, bootstrap/_styles.scss */
 .h-bg {
   background-image: url(../i/headbg.png);
   background-color: #777;
@@ -5891,42 +5904,42 @@ button.close {
   height: 325px;
   display: block; }
 
-/* line 275, bootstrap/_styles.scss */
+/* line 288, bootstrap/_styles.scss */
 .top-bar {
   background: #534741;
   margin-bottom: 10px;
   min-height: 20px;
   padding: 3px 0px 5px 0px; }
 
-/* line 282, bootstrap/_styles.scss */
+/* line 295, bootstrap/_styles.scss */
 .hours-short {
   font-size: 16px;
   color: #000;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  /* line 286, bootstrap/_styles.scss */
+  /* line 299, bootstrap/_styles.scss */
   .hours-short a {
     color: #e2e2e2; }
-    /* line 288, bootstrap/_styles.scss */
+    /* line 301, bootstrap/_styles.scss */
     .hours-short a:hover {
       color: #333; }
 
-/* line 294, bootstrap/_styles.scss */
+/* line 307, bootstrap/_styles.scss */
 .social-links {
   text-align: right;
   margin-top: 10px; }
-  /* line 298, bootstrap/_styles.scss */
+  /* line 311, bootstrap/_styles.scss */
   .social-links a svg {
     opacity: 0.8; }
 
-/* line 304, bootstrap/_styles.scss */
+/* line 317, bootstrap/_styles.scss */
 .social-links-bottom {
   text-align: left; }
-  /* line 307, bootstrap/_styles.scss */
+  /* line 320, bootstrap/_styles.scss */
   .social-links-bottom a svg {
     background: #fff;
     border-radius: 30px;
     padding: 1px; }
-  /* line 313, bootstrap/_styles.scss */
+  /* line 326, bootstrap/_styles.scss */
   .social-links-bottom a:hover svg {
     opacity: 1.0;
     -moz-transition: opacity .5s;
@@ -5937,12 +5950,12 @@ button.close {
     /* Opera */
     transition: opacity .5s; }
 
-/* line 325, bootstrap/_styles.scss */
+/* line 338, bootstrap/_styles.scss */
 .h-address {
   margin-top: 10px;
   text-align: right;
   margin-bottom: 20px; }
-  /* line 329, bootstrap/_styles.scss */
+  /* line 342, bootstrap/_styles.scss */
   .h-address span {
     font-size: 14px;
     line-height: 26px;
@@ -5950,201 +5963,201 @@ button.close {
     font-family: "jaf-facitweb",sans-serif;
     text-shadow: 2px 2px #222; }
 
-/* line 338, bootstrap/_styles.scss */
+/* line 351, bootstrap/_styles.scss */
 .h-phone {
   font-size: 18px;
   margin-top: 20px;
   text-align: right;
   color: #fff;
   text-shadow: 2px 2px #222; }
-  /* line 344, bootstrap/_styles.scss */
+  /* line 357, bootstrap/_styles.scss */
   .h-phone span {
     font-size: 16px;
     line-height: 18px;
     color: #fff;
     font-family: "jaf-facitweb",sans-serif;
     text-shadow: 2px 2px #222; }
-    /* line 350, bootstrap/_styles.scss */
+    /* line 363, bootstrap/_styles.scss */
     .h-phone span strong {
       color: #fff;
       font-size: 18px;
       text-shadow: 2px 2px #222; }
 
 /*Footer Styles */
-/* line 361, bootstrap/_styles.scss */
+/* line 374, bootstrap/_styles.scss */
 .footer-bar {
   background: #fff;
   padding: 50px 0px 50px 0px; }
 
-/* line 365, bootstrap/_styles.scss */
+/* line 378, bootstrap/_styles.scss */
 .footer-copyright {
   background: #362f2d;
   padding: 10px 0px 10px 0px; }
 
-/* line 369, bootstrap/_styles.scss */
+/* line 382, bootstrap/_styles.scss */
 .footer-bg {
   background: #362f2d !important; }
 
-/* line 372, bootstrap/_styles.scss */
+/* line 385, bootstrap/_styles.scss */
 .f-bar-bg {
   background: #fff !important; }
 
-/* line 376, bootstrap/_styles.scss */
+/* line 389, bootstrap/_styles.scss */
 .f-map img {
   margin-bottom: 20px; }
 
-/* line 380, bootstrap/_styles.scss */
+/* line 393, bootstrap/_styles.scss */
 .copyright {
   text-align: center;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   color: #e2e2e2; }
-  /* line 385, bootstrap/_styles.scss */
+  /* line 398, bootstrap/_styles.scss */
   .copyright a {
     color: #ffffff; }
 
-/* line 390, bootstrap/_styles.scss */
+/* line 403, bootstrap/_styles.scss */
 .contact-box {
   color: #000;
   min-height: 160px; }
-  /* line 393, bootstrap/_styles.scss */
+  /* line 406, bootstrap/_styles.scss */
   .contact-box h4 {
     margin-top: 0px; }
 
-/* line 398, bootstrap/_styles.scss */
+/* line 411, bootstrap/_styles.scss */
 .footer-links {
   margin-top: 30px;
   min-height: 160px; }
-  /* line 402, bootstrap/_styles.scss */
+  /* line 415, bootstrap/_styles.scss */
   .footer-links li ul {
     list-style-type: none; }
 
-/* line 408, bootstrap/_styles.scss */
+/* line 421, bootstrap/_styles.scss */
 .footer-menu {
   list-style-type: none;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px; }
-  /* line 412, bootstrap/_styles.scss */
+  /* line 425, bootstrap/_styles.scss */
   .footer-menu a {
     color: #000; }
-    /* line 414, bootstrap/_styles.scss */
+    /* line 427, bootstrap/_styles.scss */
     .footer-menu a:hover {
       color: #444; }
 
 /* Callouts */
-/* line 422, bootstrap/_styles.scss */
+/* line 435, bootstrap/_styles.scss */
 .callout-title {
   text-align: center;
   font-size: 24px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 1px 1px 0px white; }
-  /* line 427, bootstrap/_styles.scss */
+  /* line 440, bootstrap/_styles.scss */
   .callout-title a {
     color: #333333; }
-    /* line 429, bootstrap/_styles.scss */
+    /* line 442, bootstrap/_styles.scss */
     .callout-title a:hover {
       text-decoration: none; }
 
-/* line 435, bootstrap/_styles.scss */
+/* line 448, bootstrap/_styles.scss */
 .callout-body {
   text-align: center;
   font-size: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* Services Pages */
-/* line 443, bootstrap/_styles.scss */
+/* line 456, bootstrap/_styles.scss */
 .services-tabs {
   margin-top: 30px; }
 
 /* Bootstrap Dropdown Fix */
-/* line 448, bootstrap/_styles.scss */
+/* line 461, bootstrap/_styles.scss */
 ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block; }
 
-/* line 451, bootstrap/_styles.scss */
+/* line 464, bootstrap/_styles.scss */
 .navbar .dropdown-menu {
   margin-top: 0px; }
 
 /* Team Page */
-/* line 458, bootstrap/_styles.scss */
+/* line 471, bootstrap/_styles.scss */
 .team-font {
   text-shadow: 2px 1px 5px #555; }
 
-/* line 462, bootstrap/_styles.scss */
+/* line 475, bootstrap/_styles.scss */
 .team-row {
   margin-bottom: 20px; }
 
-/* line 466, bootstrap/_styles.scss */
+/* line 479, bootstrap/_styles.scss */
 .team-box {
   border: 1px solid #8D8881; }
 
-/* line 470, bootstrap/_styles.scss */
+/* line 483, bootstrap/_styles.scss */
 .team-name {
   position: absolute;
   bottom: 0px;
   left: 30px; }
 
-/* line 476, bootstrap/_styles.scss */
+/* line 489, bootstrap/_styles.scss */
 .modal-thumb {
   float: left;
   margin-right: 20px; }
 
-/* line 481, bootstrap/_styles.scss */
+/* line 494, bootstrap/_styles.scss */
 .bx-wrapper .bx-pager {
   position: absolute;
   top: -10px !important;
   right: 10px !important;
   width: auto !important; }
 
-/* line 488, bootstrap/_styles.scss */
+/* line 501, bootstrap/_styles.scss */
 #bx-pager {
   width: 100%;
   text-align: center;
   margin-bottom: 5px;
   background: #f9f9f9;
   padding: 10px 0px 10px 0px; }
-  /* line 495, bootstrap/_styles.scss */
+  /* line 508, bootstrap/_styles.scss */
   #bx-pager a img {
     border: 1px solid #8D8881;
     margin-left: 5px; }
-  /* line 500, bootstrap/_styles.scss */
+  /* line 513, bootstrap/_styles.scss */
   #bx-pager a .active img {
     border: 1px solid #428BCA; }
 
-/* line 507, bootstrap/_styles.scss */
+/* line 520, bootstrap/_styles.scss */
 .item img {
   border: 1px solid #8D8881 !important; }
 
-/* line 511, bootstrap/_styles.scss */
+/* line 524, bootstrap/_styles.scss */
 .pager-instructions {
   font-size: 12px;
   color: #8D8881;
   text-align: center; }
 
-/* line 518, bootstrap/_styles.scss */
+/* line 531, bootstrap/_styles.scss */
 .maps-box {
   width: 100%;
   overflow: hidden;
   box-shadow: 1px 0 10px #222; }
-  /* line 522, bootstrap/_styles.scss */
+  /* line 535, bootstrap/_styles.scss */
   .maps-box img {
     position: relative;
     left: 50%;
     margin-left: -960px; }
 
-/* line 529, bootstrap/_styles.scss */
+/* line 542, bootstrap/_styles.scss */
 .maps-box-narrow {
   width: 100%;
   overflow: hidden;
   border: 1px solid #000; }
-  /* line 533, bootstrap/_styles.scss */
+  /* line 546, bootstrap/_styles.scss */
   .maps-box-narrow img {
     position: relative;
     left: 50%;
     margin-left: -960px; }
 
 /* Testimonial 2 Page */
-/* line 542, bootstrap/_styles.scss */
+/* line 555, bootstrap/_styles.scss */
 .speech-bubble {
   background: #d8e7f0;
   border-bottom-right-radius: 10px;
@@ -6155,7 +6168,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   margin-bottom: 30px;
   position: relative; }
 
-/* line 551, bootstrap/_styles.scss */
+/* line 564, bootstrap/_styles.scss */
 .speech-bubble-triangle {
   width: 1px;
   height: 1px;
@@ -6167,7 +6180,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   bottom: -20px;
   right: 20px; }
 
-/* line 564, bootstrap/_styles.scss */
+/* line 577, bootstrap/_styles.scss */
 .affix {
   top: 0px;
   width: 100%;
@@ -6177,11 +6190,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 992px) {
-  /* line 577, bootstrap/_styles.scss */
+  /* line 590, bootstrap/_styles.scss */
   .navbar .caret {
     display: none; }
 
-  /* line 583, bootstrap/_styles.scss */
+  /* line 596, bootstrap/_styles.scss */
   .navbar .dropdown-menu {
     display: inline-block;
     position: relative;
@@ -6190,18 +6203,18 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     background: transparent;
     border: none;
     margin-left: 30px; }
-    /* line 593, bootstrap/_styles.scss */
+    /* line 606, bootstrap/_styles.scss */
     .navbar .dropdown-menu li a:before {
       content: '-'; }
 
-  /* line 601, bootstrap/_styles.scss */
+  /* line 614, bootstrap/_styles.scss */
   .affix {
     position: relative !important; } }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 /*Tooltip component by www.menucool.com */
 /*For tooltip target element that has set class="tooltip" */
-/* line 618, bootstrap/_styles.scss */
+/* line 631, bootstrap/_styles.scss */
 .tooltip {
   text-decoration: none;
   border-bottom: 1px dotted #36c;
@@ -6209,7 +6222,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   outline: none; }
 
 /*For tooltip box*/
-/* line 621, bootstrap/_styles.scss */
+/* line 634, bootstrap/_styles.scss */
 div#mcTooltip {
   line-height: 16px;
   border-width: 1px;
@@ -6223,17 +6236,17 @@ div#mcTooltip {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: none; }
 
-/* line 635, bootstrap/_styles.scss */
+/* line 648, bootstrap/_styles.scss */
 div#mcTooltip, div.mcTooltipInner {
   background-color: none; }
 
 /* For hyperlink within tooltip */
-/* line 641, bootstrap/_styles.scss */
+/* line 654, bootstrap/_styles.scss */
 div#mcTooltip a {
   color: #9cf; }
 
 /*Close button. Available when sticky or overlay has been set to true, or is on iPhone, iPad, Android, BlackBerry, or IEMobile devices. */
-/* line 644, bootstrap/_styles.scss */
+/* line 657, bootstrap/_styles.scss */
 div#mcttCloseButton {
   width: 14px;
   height: 14px;
@@ -6246,7 +6259,7 @@ div#mcttCloseButton {
   left: auto; }
 
 /* Only applies when overlay has been set to true or 1 */
-/* line 651, bootstrap/_styles.scss */
+/* line 664, bootstrap/_styles.scss */
 div#mcOverlay {
   background-color: white;
   opacity: 0.8;
@@ -6260,7 +6273,7 @@ div#mcOverlay {
   z-index: 4; }
 
 /*Only available when calling by tooltip.ajax(...). It will be a spinning image indicating a request is in progress.*/
-/* line 659, bootstrap/_styles.scss */
+/* line 672, bootstrap/_styles.scss */
 div#tooltipAjaxSpin {
   margin: 20px 50px;
   background: transparent url(loading.gif) no-repeat center center;
@@ -6269,7 +6282,7 @@ div#tooltipAjaxSpin {
   font-size: 0; }
 
 /*The settings below should remain unchanged*/
-/* line 662, bootstrap/_styles.scss */
+/* line 675, bootstrap/_styles.scss */
 div#mcTooltipWrapper {
   position: absolute;
   visibility: hidden;
@@ -6277,26 +6290,26 @@ div#mcTooltipWrapper {
   z-index: 9999999999;
   top: 0px; }
 
-/* line 663, bootstrap/_styles.scss */
+/* line 676, bootstrap/_styles.scss */
 div#mcTooltip {
   float: left;
   border-style: solid;
   position: relative;
   overflow: hidden; }
 
-/* line 664, bootstrap/_styles.scss */
+/* line 677, bootstrap/_styles.scss */
 div.mcTooltipInner {
   float: left;
   position: relative;
   width: auto;
   height: auto; }
 
-/* line 665, bootstrap/_styles.scss */
+/* line 678, bootstrap/_styles.scss */
 div#mcttCo {
   position: absolute;
   text-align: left; }
 
-/* line 666, bootstrap/_styles.scss */
+/* line 679, bootstrap/_styles.scss */
 div#mcttCo em, div#mcttCo b {
   display: block;
   width: 0;
@@ -6304,37 +6317,37 @@ div#mcttCo em, div#mcttCo b {
   overflow: hidden; }
 
 /*workable with bootstrap*/
-/* line 669, bootstrap/_styles.scss */
+/* line 682, bootstrap/_styles.scss */
 div#mcTooltip, div#mcTooltip div {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 675, bootstrap/_styles.scss */
+/* line 688, bootstrap/_styles.scss */
 img {
   vertical-align: middle;
   border: 0; }
 
 /* http://www.menucool.com */
-/* line 681, bootstrap/_styles.scss */
+/* line 694, bootstrap/_styles.scss */
 #sliderFrame, #sliderFrame div {
   box-sizing: content-box; }
 
-/* line 685, bootstrap/_styles.scss */
+/* line 698, bootstrap/_styles.scss */
 #sliderFrame {
   position: relative;
   width: 700px;
   margin: 0 auto;
   /*center-aligned*/ }
 
-/* line 692, bootstrap/_styles.scss */
+/* line 705, bootstrap/_styles.scss */
 #slider, #slider div.sliderInner {
   width: 700px;
   height: 306px;
   /* Must be the same size as the slider images */
   border-radius: 6px; }
 
-/* line 697, bootstrap/_styles.scss */
+/* line 710, bootstrap/_styles.scss */
 #slider {
   background: #fff url(loading.gif) no-repeat 50% 50%;
   position: relative;
@@ -6342,7 +6355,7 @@ img {
   box-shadow: 0px 1px 5px #999999; }
 
 /* the link style (if an image is wrapped in a link) */
-/* line 705, bootstrap/_styles.scss */
+/* line 718, bootstrap/_styles.scss */
 #slider a.imgLink, #slider .video {
   z-index: 2;
   cursor: pointer;
@@ -6355,12 +6368,12 @@ img {
   width: 100%;
   height: 100%; }
 
-/* line 712, bootstrap/_styles.scss */
+/* line 725, bootstrap/_styles.scss */
 #slider a.video {
   background: transparent url(video.png) no-repeat 50% 50%; }
 
 /* Caption styles */
-/* line 717, bootstrap/_styles.scss */
+/* line 730, bootstrap/_styles.scss */
 #slider div.mc-caption-bg, #slider div.mc-caption-bg2 {
   position: absolute;
   width: 440px;
@@ -6375,7 +6388,7 @@ img {
   overflow: hidden;
   font-size: 0; }
 
-/* line 728, bootstrap/_styles.scss */
+/* line 741, bootstrap/_styles.scss */
 #slider div.mc-caption-bg {
   /* NOTE: Its opacity is to be set through the sliderOptions.captionOpacity setting in the js-image-slider.js file.*/
   background: Black;
@@ -6383,11 +6396,11 @@ img {
   border: 1px solid white;
   border-radius: 5px; }
 
-/* line 734, bootstrap/_styles.scss */
+/* line 747, bootstrap/_styles.scss */
 #slider div.mc-caption-bg2 {
   background: none; }
 
-/* line 737, bootstrap/_styles.scss */
+/* line 750, bootstrap/_styles.scss */
 #slider div.mc-caption {
   font: bold 15px Arial;
   color: #EEE;
@@ -6395,17 +6408,17 @@ img {
   text-align: center;
   background: none; }
 
-/* line 744, bootstrap/_styles.scss */
+/* line 757, bootstrap/_styles.scss */
 #slider div.mc-caption a {
   color: #FB0; }
 
-/* line 747, bootstrap/_styles.scss */
+/* line 760, bootstrap/_styles.scss */
 #slider div.mc-caption a:hover {
   color: #DA0; }
 
 /* ------ built-in navigation bullets wrapper ------*/
 /* Note: check themes\2\js-image-slider.css to see how to hide nav bullets */
-/* line 754, bootstrap/_styles.scss */
+/* line 767, bootstrap/_styles.scss */
 #slider div.navBulletsWrapper {
   top: 328px;
   /* Its position is relative to the #slider */
@@ -6416,7 +6429,7 @@ img {
   z-index: 5; }
 
 /* each bullet */
-/* line 764, bootstrap/_styles.scss */
+/* line 777, bootstrap/_styles.scss */
 #slider div.navBulletsWrapper div {
   width: 9px;
   height: 9px;
@@ -6435,14 +6448,14 @@ img {
   border-radius: 50%;
   box-shadow: inset 0 0 4px #AAA; }
 
-/* line 779, bootstrap/_styles.scss */
+/* line 792, bootstrap/_styles.scss */
 #slider div.navBulletsWrapper div.active {
   border-color: #3E99C6;
   background: #259FDC;
   color: White; }
 
 /* --------- Others ------- */
-/* line 788, bootstrap/_styles.scss */
+/* line 801, bootstrap/_styles.scss */
 #slider div.loading {
   width: 100%;
   height: 100%;
@@ -6454,13 +6467,13 @@ img {
   top: 0;
   z-index: 9; }
 
-/* line 800, bootstrap/_styles.scss */
+/* line 813, bootstrap/_styles.scss */
 #slider img, #slider > b, #slider a > b {
   position: absolute;
   border: none;
   display: none; }
 
-/* line 804, bootstrap/_styles.scss */
+/* line 817, bootstrap/_styles.scss */
 #slider div.sliderInner {
   overflow: hidden;
   -webkit-transform: rotate(0.0deg);
@@ -6469,11 +6482,11 @@ img {
   top: 0;
   left: 0; }
 
-/* line 810, bootstrap/_styles.scss */
+/* line 823, bootstrap/_styles.scss */
 #slider > a, #slider video, #slider audio {
   display: none; }
 
-/* line 811, bootstrap/_styles.scss */
+/* line 824, bootstrap/_styles.scss */
 #slider div {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }

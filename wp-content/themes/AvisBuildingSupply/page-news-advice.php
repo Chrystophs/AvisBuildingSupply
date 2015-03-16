@@ -30,19 +30,18 @@ get_header();
                                 </h1>
                             </header>
                             <section itemprop="articleBody">
-
                                   <ul class="post-content">
                                     <?php $the_query = new WP_Query( 'category_name=NewsAdvice&showposts=5' ); ?>
                                       <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
                                       <li class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
                                       <div class="upper-meta"><em><?php echo get_the_date(); ?></em></div>
-                                      <p><?php the_content(__('(more…)')); ?></p>
-                                      <hr>
+                                      <p>
+                                <?php if ( has_post_thumbnail() ) { ?>
+                                      <?php the_post_thumbnail(array(200,200), array('class'=>'img-thumbnail pull-left margin-right')); ?>
+                                <?php } ?><?php the_content(__('(more…)')); ?></p>
+                                      <hr class="clear">
                                     <?php endwhile;?>
                                   </ul>
-                                <?php if ( has_post_thumbnail() ) { ?>
-                                      <?php the_post_thumbnail(array(200,200), array('class'=>'img-thumbnail pull-right margin-left')); ?>
-                                <?php } ?>
                             </section>
                         </article>
                     </div>      
