@@ -61,7 +61,7 @@ function create_post_type() {
 	register_post_type( 'gallery',
 		array(
 			'labels' => array(
-				'name' => __( 'Smile Gallery' ),
+				'name' => __( 'Gallery' ),
 				'singular_name' => __( 'Gallery' )
 			),
 			'public' => true,
@@ -124,29 +124,6 @@ function create_post_type() {
 				),
 			'rewrite' => array('slug' => 'homepage-slider')
 		)
-	);
-	
-	register_post_type( 'doctors',
-	  array(
-		'labels' => array(
-		  'name' => __( 'Doctors' ),
-		  'singular_name' => __( 'Doctor' )
-		),
-		'menu_icon' => 'dashicons-businessman',
-		'public' => true,
-		'has_archive' => true,
-		'map_meta_cap' => true,
-		'hierarchical' => true,
-		'supports' => array(
-		  'title',
-		  'editor',
-		  'excerpt',
-		  'thumbnail',
-		  'custom-fields',
-		  'page-attributes'
-		  ),
-		'rewrite' => array('slug' => 'doctors'),
-	  )
 	);
 	
 	register_post_type( 'team',

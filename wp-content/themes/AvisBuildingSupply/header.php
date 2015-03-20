@@ -13,6 +13,10 @@
     
     <title><?php wp_title(''); ?></title>
 
+    <!--FavIcon-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <!--Carousel-->
     <link href="<?php bloginfo('stylesheet_directory'); ?>/jsImgSlider/themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
     <script src="<?php bloginfo('stylesheet_directory'); ?>/jsImgSlider/themes/1/js-image-slider.js" type="text/javascript"></script>
@@ -48,7 +52,7 @@
 <div class="container trans">
 	<div class="row h-bg">
             <div class="col-sm-6 col-md-6 col-lg-5">
-                <?php $logo_header = of_get_option('logo_header');
+                <!-- <?php $logo_header = of_get_option('logo_header');
 				  if ($logo_header) { ?>
 				   <a class="main-logo" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
                         <img src="<?php echo $logo_header; ?>" alt="<?php bloginfo('name'); ?>" class="img-responsive"/>
@@ -57,7 +61,7 @@
 					<a class="main-logo" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
 						<img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt="<?php bloginfo('name'); ?>" class="img-responsive"/>
 					</a>
-				<?php } ?>
+				<?php } ?>-->
             </div>
             <div class="col-sm-6 col-md-6 col-lg-7">
                 
