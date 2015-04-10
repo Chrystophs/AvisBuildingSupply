@@ -107,7 +107,9 @@
                             <?php get_template_part( 'partials/svg','declaration'); ?>
                         </div>
                     </div>
-                    
+                    <div class="employ">
+                        <a href="/employment/" alt="Employment">Employment</a>
+                    </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <?php $logo_header = of_get_option('logo_header');
